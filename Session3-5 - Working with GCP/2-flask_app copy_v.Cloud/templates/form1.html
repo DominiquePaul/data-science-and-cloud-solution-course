@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+<div class="container">
+  <div class="col-md-4">
+    <h1>Hello {{ name }}</h1>
+    <!-- we can create forms very quickly by just using the quick_form function -->
+    {{ wtf.quick_form(form) }}
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+<!-- Here is a snippet that is more similar to our previous layout -->
+
+<!-- <div class="container">
+  <h1>Hello {{ name }}</h1>
+  <form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+
+    {{ form.name.label }}
+    <br><br>
+    {{ form.name() }}
+    <br><br>
+    {{ form.submit() }}
+  </form>
+</div> -->

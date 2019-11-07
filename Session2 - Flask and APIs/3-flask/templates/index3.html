@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>{{ company_name }} ltd.</title>
+    </head>
+    <body>
+      {% if user %}
+      <h1>Hello {{ user.user_name }}, this is your shopping list for today</h1>
+      {% else %}
+      <h1>Hello, stranger! This is your shopping list for today</h1>
+      {% endif %}
+
+      <ul>
+        {% for element in slist %}
+        <li>{{ element }}</li>
+        {% endfor %}
+      </ul>
+
+    </body>
+</html>

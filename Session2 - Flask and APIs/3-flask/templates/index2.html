@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>{{ company_name }} ltd.</title>
+    </head>
+    <body>
+      {% if user %}
+      <h1>Hello {{ user.user_name }}, this version uses logic </h1>
+      {% else %}
+      <h1>Hello, stranger! This version uses logic </h1>
+      {% endif %}
+    </body>
+</html>
